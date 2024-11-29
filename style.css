@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-size: cover;
+  background-color: rgb(246, 246, 245);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.container nav {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 80vh;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(216, 33, 33, 0.2);
+  margin: 8px;
+}
+
+.card-button {
+  display: flex;
+  justify-content: space-between; /* Distribute buttons horizontally */
+  gap: 10px; /* Add some space between the buttons */
+}
+
+.about-section {
+  display: flex;
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: rgb(233, 44, 44);
+}
+
+/* .container padding */
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: rgb(204, 188, 188);
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+      width: 100%;
+      display: block;
+  }
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Contact Form Section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column; /* Ensure items are stacked */
+  gap: 10px; /* Add space between items */
+}
